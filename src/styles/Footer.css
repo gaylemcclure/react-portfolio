@@ -1,0 +1,16 @@
+.footer-wrapper {
+    height: 8rem;
+    background-color: var(--green);
+    justify-content: center;
+    align-items: center;
+    p {
+        color: var(--white);
+    }
+}
+
+.social-icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 1rem;
+    border-radius: 8px;
+}

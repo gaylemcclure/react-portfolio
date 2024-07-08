@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import avatar from '../assets/website-avatar.png'
 import "../styles/Home.css";
+import Footer from "../components/footer";
 
 const texts = ["FULL STACK DEVELOPER", "SOFTWARE DEVELOPER", "MERN STACK DEVELOPER"];
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
   }, []);
 
   return (
+    <div>
     <div className="home-wrapper flex flex-row">
       <div className="text-section flex flex-col">
         <h1 className="reg-text">Hey there, welcome to my portfolio</h1>
@@ -30,6 +32,8 @@ const HomePage = () => {
       <div className="avatar flex">
         <img src={avatar} alt="purple haired avatar sitting at a computer" />
       </div>
+    </div>
+    <Footer />
     </div>
   );
 };

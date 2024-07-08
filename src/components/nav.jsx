@@ -8,7 +8,7 @@ import { Link, useNavigate} from "react-router-dom";
 const links = [
   {
     id: 1,
-    name: "About me",
+    name: "About",
     url: "/about",
   },
   {
@@ -26,10 +26,12 @@ const links = [
     name: "Resume",
     url: "/resume",
   },
+  
 ];
 
-const Nav = () => {
+const Nav = ({ menu, handleLink }) => {
   const [anchorEl, setAnchorEl] = useState(null);
+
   const open = Boolean(anchorEl);
   const navigate = useNavigate();
 
@@ -43,6 +45,8 @@ const Nav = () => {
     setAnchorEl(null);
     navigate(e.target.id);
   };
+
+
   return (
     <>
       {/* if mobile, show menu icon */}
@@ -74,7 +78,7 @@ const Nav = () => {
       {/* if screen, show full menu */}
       <div className="screen left-auto">
         {links.map((link) => {
-            return <Link key={link.id} className="nav-link" to={link.url}>{link.name}</Link>
+            return <Link key={link.id} onClick={(e) => handleLink(e)} className={menu === link.name ? "active nav-link" : "nav-link"} to={link.url}>{link.name}</Link>
         })}
       </div>
     </>

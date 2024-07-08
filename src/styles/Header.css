@@ -1,7 +1,7 @@
 
 /* ------ HEADER ----------*/
 .header-wrapper {
-    padding: 1rem 2rem;
+    padding: 2.7rem 4rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,11 @@
     font-family: "Poppins", sans-serif;
     color: var(--lt-blue);
     font-weight: 600;
+    text-decoration: none;
+    position: absolute; 
+    top: 1rem;
+    left: 4rem;
+    transition-duration: 0.3s;
   }
   .nav-link {
     color: var(--white);
@@ -28,6 +33,50 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     padding: 0 1rem;
+    transition-duration: 0.2s;
   }
-  
-  
+
+
+@keyframes bounceOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  25% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  75% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.name:hover
+{
+  cursor: pointer;
+  animation: bounceOut 0.3s linear;
+  color: var(--white);
+}
+
+.nav-link:hover
+{
+  cursor: pointer;
+  animation: bounceOut 0.3s linear;
+  color: var(--lt-blue);
+}
+
+.active {
+  color: var(--lt-blue);
+}

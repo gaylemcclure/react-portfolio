@@ -1,0 +1,17 @@
+#root {
+  height: 100vh;
+  font-size: 16px;
+}
+
+:root {
+  --green: #0c3845;
+  --gray: #272D2D;
+  --white: #F6F8FF;
+  --lt-blue: #188bda;
+}
+
+body{
+  margin: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(12, 56, 69) 100%);
+}

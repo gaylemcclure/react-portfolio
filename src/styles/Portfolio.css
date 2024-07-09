@@ -1,10 +1,79 @@
-.project {
-    height: 400px;
-    width: 400px;
-    background-color: purple;
-    margin: 2rem;
-    flex-wrap: wrap;
-    img {
-        height: 100%;
+.portfolio-wrapper {
+    padding: 4rem 2rem;
+    height: 100vh;
+    align-items: center; 
+    h1 {
+        color: var(--white);
     }
 }
+
+.project-container {
+    flex-wrap: wrap;
+width: 60%;
+margin: 2rem auto 4rem;
+justify-content: center;
+height: 100%;
+}
+
+.project-wrapper, .project-icon {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 12px;
+}
+
+.project-wrapper {
+    margin: 2rem 4rem;
+
+}
+
+.project-inner {
+    position: absolute;
+  }
+.project-icon {
+    transition: .3s ease; 
+}
+  .project-inner .overlay {
+    position: relative;
+    height: 25rem;
+    width: 25rem;
+    bottom: 25.45rem;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--lt-blue);
+    border-radius: 12px;
+  }
+
+
+   .project-wrapper:hover {
+    cursor:pointer;
+    .overlay {
+        opacity: 0.6;
+      }
+    img {
+        opacity: 0;
+    }
+  } 
+
+  .btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .overlay-inner {
+    position: relative;
+    top: 35%;
+    justify-content: center;
+  }
+
+  .text-button:hover {
+    color:#eeddff;
+  }
+
+  .icon-button:hover {
+    color: #adffad;
+  }

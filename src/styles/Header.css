@@ -1,30 +1,29 @@
 
 /* ------ HEADER ----------*/
 .header-wrapper {
-    padding: 2.7rem 4rem 1rem;
+    padding: 1rem 0.5rem 1rem 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 4rem;
+    max-height: 4rem;
     img {
       height: 4rem;
     }
     .material-symbols-outlined {
       font-size: 30px;
-      color: var(--gray);
+      color: var(--white);
     }
   }
   .name {
     margin: 0;
     display: flex;
     align-items: flex-start;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-family: "Poppins", sans-serif;
     color: var(--lt-blue);
     font-weight: 600;
     text-decoration: none;
-    position: absolute; 
-    top: 1rem;
-    left: 4rem;
     transition-duration: 0.3s;
   }
   .nav-link {

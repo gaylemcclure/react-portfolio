@@ -17,7 +17,7 @@ const HomePage = () => {
 
   return (
     <div>
-    <div className="home-wrapper flex flex-row">
+    <div className="home-wrapper flex">
       <div className="text-section flex flex-col">
         <h1 className="reg-text">Hey there, welcome to my portfolio</h1>
         <h1 className="name-text">
@@ -29,9 +29,9 @@ const HomePage = () => {
         <TextTransition springConfig={presets.wobbly}>{texts[textIndex % texts.length]} </TextTransition>
       </h1>
       </div>
-      <div className="avatar flex">
-        <img src={avatar} alt="purple haired avatar sitting at a computer" />
-      </div>
+      <div className="avatar flex"> 
+         <img src={avatar} alt="purple haired avatar sitting at a computer" /> 
+       </div>
     </div>
     <Footer />
     </div>

@@ -6,7 +6,7 @@ import "../styles/About.css";
 const AboutPage = () => {
   return (
     <div>
-      <div className="about-wrapper flex flex-row">
+      <div className="about-wrapper flex">
         <div className="title-wrapper">
           <h1 className="title">About me</h1>
           <p className="text">Hi, I'm Gayle. Originally hailing from Belfast in Northern Ireland, I now reside in regional Victoria with my two small humans and lil fluffball. I am a full stack developer, with a passion for innovative design and interactive UI. When I'm not coding, you will find me roller skating, walking the dog, or chilling with my favourite people. </p>

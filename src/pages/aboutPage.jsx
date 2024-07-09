@@ -1,5 +1,6 @@
 import avatar from "../assets/about-avatar.png";
 import Footer from "../components/footer";
+import "../styles/About.css";
 
 
 const AboutPage = () => {

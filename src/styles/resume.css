@@ -1,0 +1,78 @@
+.res-container {
+    height: 100%;
+}
+.resume-wrapper {
+    padding: 4rem 2rem 0;
+    height: 100%;
+    align-items: center;
+    
+    h1 {
+        color: var(--white);
+    }
+}
+
+.skill-wrapper, .skill-icon {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 12px;
+}
+
+.skill-wrapper {
+    border: 2px solid var(--lt-blue);
+    background-color: transparent;
+    margin: 1rem;
+}
+
+.icon-wrapper {
+    flex-wrap: wrap;
+width: 60%;
+margin: 2rem auto 4rem;
+justify-content: center;
+
+}
+
+.skill-icon {
+    color: var(--white);
+    border-radius: 12px;
+    background-color: white;
+    transition: .3s ease;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .overlay {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    bottom: 10.4rem;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: var(--lt-blue);
+    border-radius: 12px;
+  }
+  
+  .skill-wrapper:hover {
+    cursor:pointer
+    .overlay {
+        opacity: 1;
+      }
+    img {
+        opacity: 0;
+    }
+  }
+
+  .skill-inner {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+  }

@@ -1,0 +1,10 @@
+.project {
+    height: 400px;
+    width: 400px;
+    background-color: purple;
+    margin: 2rem;
+    flex-wrap: wrap;
+    img {
+        height: 100%;
+    }
+}

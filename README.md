@@ -4,7 +4,7 @@
   
   ## DESCRIPTION
 This is a portfolio website made to display all my current projects. It is build with node & React js, and has a list of completed projects with links to their examples. 
-[Click here](https://tech-blog-ptz0.onrender.com/) to visit my website: 
+[Click here](https://symphonious-pixie-006884.netlify.app/) to visit my website: 
 
 Screenshots
 

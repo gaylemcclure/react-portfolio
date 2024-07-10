@@ -1,4 +1,3 @@
-import "../styles/Project.css";
 
 const Project = ({ img, name, url, gitUrl }) => {
   
@@ -13,7 +12,7 @@ const Project = ({ img, name, url, gitUrl }) => {
     <div className="project-wrapper">
       <div className="project-inner">
         <img className="project-icon" src={img} alt={`${name} logo`} />
-        <div className="overlay">
+        <div className="project-overlay">
           <div className="flex flex-row overlay-inner">
             <button className="text-button btn" onClick={() => handleProjectLink()}>
               {name}{" "}

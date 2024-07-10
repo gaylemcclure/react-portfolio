@@ -31,3 +31,114 @@
   display: flex;
   justify-content:center
 }
+
+
+@media screen and (max-height: 685px) {
+  .home-wrapper {
+    height: calc(100vh - 10rem);
+  }
+}
+
+@media screen and (min-height: 686px) and (max-height: 844px) {
+  .home-wrapper {
+    height: calc(100vh - 8rem);
+  }
+}
+@media screen and (min-height: 845px) {
+  .home-wrapper {
+    height: calc(100vh - 14rem);
+  }
+}
+
+@media screen and (max-width: 568px) {
+
+  .name-text {
+    font-size: 40px;
+  }
+  .text-animation {
+    font-size: 1.5rem;
+  }
+  .home-wrapper {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+  .avatar img {
+    height: 16rem;
+  }
+  .avatar {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 569px) {
+  .avatar {
+    width: 50%;
+  }
+  .avatar img {
+    height: 20rem;
+  }
+  .text-section {
+    justify-content: center;
+    padding: 0 2rem;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+  .header-wrapper {
+    padding: 1rem 2.2rem 1rem;
+  }
+  .name {
+    font-size: 3.5rem;
+  }
+
+  .home-wrapper {
+    padding: 3rem 2rem 1rem;
+    flex-direction: row;
+  }
+  .avatar img {
+    height: 22rem;
+  }
+  .name-text,
+  .reg-text {
+    font-size: 2.5rem;
+  }
+  .text-animation {
+    font-size: 2rem;
+  }
+  .text-section {
+    margin-top: 5rem;
+  }
+  .avatar {
+    width: 50%;
+  }
+  .about-avatar {
+    height: 25rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .home-wrapper {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .text-section {
+    width: 50%;
+    justify-content: center;
+  }
+  .avatar {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  .avatar {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1801px) {
+  .avatar img {
+    height: 30rem;
+  }
+}

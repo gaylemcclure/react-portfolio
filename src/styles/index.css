@@ -1,6 +1,14 @@
 #root {
-  /* height: 100vh; */
+  height: 100%;
   font-size: 16px;
+}
+
+html {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(12, 56, 69) 100%) no-repeat;
+  max-width: auto;
+  background-size: cover;
+
 }
 
 :root {
@@ -13,12 +21,11 @@
 
 body{
   margin: 0;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(12, 56, 69) 100%);
   font-family: "Poppins", sans-serif;
+
 }
 
 
-html {
-  height: 100vh;
+body > div {
+  height: 100%;
 }

@@ -20,120 +20,24 @@
 }
 
 .background-img {
-  background-image: url('../assets/network-2.png');
+  background-image: url("../assets/network-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
 }
 
 .avatar {
   height: 20rem;
 }
 
-/* button.MuiButtonBase-root {
-  background-color: var(--lt-blue);
-  color: var(--white);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  margin-top: 0.5rem;
-} */
 
-
-
-
-/* ----media queries ----*/
-
-@media screen and (max-height: 685px) {
-  .home-wrapper {
-    height: calc(100vh - 13rem);
-  }
-}
-
-@media screen and (min-height: 686px) {
-  .home-wrapper {
-    height: calc(100vh - 18rem);
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .name-text, .reg-text {
-    font-size: 1.5rem;
-  }
-  .name-text {
-    font-size: 40px;
-  }
-  .text-animation {
-    font-size: 1.5rem;
-  }
-  .home-wrapper, .about-wrapper {
-    padding: 2rem 1rem;
-    flex-direction: column;
-  }
-  .avatar img{
-    height: 16rem;
-  }
-  .avatar {
-    width: 100%;
-  }
-}
-
-
+/* ----MEDIA QUERIES ----*/
 @media screen and (min-width: 769px) {
   .mobile {
-    display: none
+    display: none;
   }
   .screen {
     display: flex;
-  }
-  .header-wrapper {
-    padding: 1rem 2.2rem 1rem;
-  }
-  .name {
-    font-size: 3.5rem;
-  }
-
-  .home-wrapper {
-    padding: 3rem 2rem 1rem;
-  }
-  .avatar img{
-    height: 22rem;
-  }
-  .name-text, .reg-text {
-    font-size: 2.5rem;
-  }
-  .text-animation {
-    font-size: 2rem;
-  }
-  .text-section {
-    margin-top: 5rem;
-  }
-}
-
-
-
-@media screen and (min-width: 1025px) {
-  .home-wrapper {
-    flex-direction: row;
-    padding: 2rem;
-  }
-  .text-section {
-    width: 50%;
-    justify-content: center;
-  }
-  .avatar {
-    width: 50%;
-  }
-
-} 
-
-@media screen and (min-width: 1301px) {
-  .avatar {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1801px) {
-  .avatar img {
-    height: 30rem;
   }
 }

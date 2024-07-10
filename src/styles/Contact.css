@@ -1,26 +1,23 @@
 fieldset.MuiOutlinedInput-notchedOutline {
   border-color: var(--white);
   border-radius: 8px;
-  width: 100%;
 }
 
 .MuiFormControl-root {
   label {
     color: var(--white);
   }
-  input, textarea {
+  input,
+  textarea {
     color: var(--white);
   }
-
 }
 .contact-wrapper {
   background-color: var(--gray);
-  width: 40%;
-
-  margin: 4rem auto;
   border-radius: 12px;
   padding: 1rem 2rem 4rem;
   align-items: center;
+  max-width: 1000px;
 
   h1 {
     color: var(--white);
@@ -41,24 +38,81 @@ fieldset.MuiOutlinedInput-notchedOutline {
   width: 75%;
 }
 
-
-
 .MuiInputBase-root.MuiOutlinedInput-root:hover {
-   .MuiOutlinedInput-notchedOutline {
+  .MuiOutlinedInput-notchedOutline {
     border-color: var(--lt-blue);
-   } 
   }
+}
 
-  .error {
-    color: red;
-    font-weight: 300;
-  }
+.error {
+  color: red;
+  font-weight: 300;
+}
 
-  .success {
-    color: green;
-    font-weight: 400;
+.success {
+  color: green;
+  font-weight: 400;
+}
+
+
+
+/* ----MEDIA QUERIES ----*/
+
+/* Mobile devices */
+@media screen and (max-width: 568px) {
+  
+.contact-container {
+  padding: 0 2rem;
+  min-height: 50.5rem
+}
+.contact-wrapper {
+  margin: 2rem auto;
+  border-radius: 12px;
+  padding: 1rem 0 2rem;
+
+}
+}
+
+/* Mobile & small tablet */
+@media screen and (min-width: 569px) {
+  .contact-container {
+    padding: 0 2rem;
+    min-height: 64rem
   }
+  .contact-wrapper {
+    margin: 2rem auto;
+    border-radius: 12px;
+    padding: 1rem 0 2rem;
+  
+  }
+}
+
+/* Tablets portrait/landscape */
+@media screen and (min-width: 769px) {
 
   .contact-container {
-    min-height: 85.2vh;
+    padding: 0 2rem;
+    min-height: 76rem
   }
+  .contact-wrapper {
+    width: 45%;
+    margin: 4rem auto;
+    padding: 1rem 2rem 4rem;
+  
+  }
+}
+/* Laptops */
+@media screen and (min-width: 1025px) {
+}
+
+/* Screens */
+@media screen and (min-width: 1301px) {
+}
+
+/* Lg screens */
+@media screen and (min-width: 1801px) {
+}
+
+/* XL screens */
+@media screen and (min-width: 2400px) {
+}

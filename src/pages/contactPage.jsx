@@ -53,7 +53,6 @@ const ContactPage = () => {
   const handleSubmit = () => {
     if (name !== "" && email !== "" && message !== "") {
         if (email && email.match(isValidEmail)) {
-            console.log("success")
             setSuccessMsg("Your message has been submitted")
         }
         else {
@@ -71,7 +70,7 @@ const ContactPage = () => {
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
+          "& .MuiTextField-root": { m: 1 },
         }}
         noValidate
         autoComplete="off"

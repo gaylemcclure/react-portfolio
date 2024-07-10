@@ -1,79 +1,194 @@
 .portfolio-wrapper {
-    padding: 4rem 2rem;
-    height: 100vh;
-    align-items: center; 
-    h1 {
-        color: var(--white);
-    }
+  height: 100vh;
+  align-items: center;
+  h1 {
+    color: var(--white);
+  }
 }
 
 .project-container {
-    flex-wrap: wrap;
-width: 60%;
-margin: 2rem auto 4rem;
-justify-content: center;
-height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
 }
 
-.project-wrapper, .project-icon {
-    width: 25rem;
-    height: 25rem;
-    border-radius: 12px;
-}
-
-.project-wrapper {
-    margin: 2rem 4rem;
-
+.project-wrapper,
+.project-icon {
+  border-radius: 12px;
 }
 
 .project-inner {
-    position: absolute;
-  }
-.project-icon {
-    transition: .3s ease; 
+  position: absolute;
 }
-  .project-inner .overlay {
-    position: relative;
-    height: 25rem;
-    width: 25rem;
-    bottom: 25.45rem;
+.project-icon {
+  transition: 0.3s ease;
+}
+
+
+.project-wrapper:hover {
+  cursor: pointer;
+  .project-overlay {
+    opacity: 0.6;
+  }
+  img {
     opacity: 0;
-    transition: .5s ease;
-    background-color: var(--lt-blue);
-    border-radius: 12px;
   }
+}
+
+.project-overlay {
+  position: relative;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--lt-blue);
+  border-radius: 12px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.overlay-inner {
+  position: relative;
+  top: 35%;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.text-button:hover {
+  color: #eeddff;
+}
+
+.icon-button:hover {
+  color: #adffad;
+}
+
+/* ----MEDIA QUERIES ----*/
 
 
-   .project-wrapper:hover {
-    cursor:pointer;
-    .overlay {
-        opacity: 0.6;
-      }
-    img {
-        opacity: 0;
-    }
-  } 
-
+/* Mobile devices */
+@media screen and (max-width: 568px) {
+  .project-overlay {
+    width: 7rem;
+    height: 7rem;
+    bottom: 7.4rem;
+  }
+  .project-wrapper,
+  .project-icon {
+    width: 7rem;
+    height: 7rem;
+  }
+  .portfolio-wrapper {
+    padding: 2rem;
+  }
+  .project-wrapper {
+    margin: 1rem;
+  }
   .btn {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 0 1rem;
-    font-weight: 600;
-    cursor: pointer;
+    font-size: 14px;
+    /* padding: 0 1rem; */
+  }
+  .project-inner {
+    height: 7rem;
+  }
+}
+
+/* Mobile & small tablet */
+@media screen and (min-width: 569px) {
+  .project-overlay {
+    width: 12rem;
+    height: 12rem;
+    bottom: 12.4rem;
+  }
+  .project-wrapper,
+  .project-icon {
+    width: 12rem;
+    height: 12rem;
+  }
+  .portfolio-wrapper {
+    padding: 2rem;
+  }
+  .project-wrapper {
+    margin: 1rem;
+  }
+  .btn {
+    font-size: 14px;
+    /* padding: 0 1rem; */
+  }
+  .project-inner {
+    height: 7rem;
+  }
+}
+
+/* Tablets portrait/landscape */
+@media screen and (min-width: 769px) {
+  .project-overlay {
+    width: 16rem;
+    height: 16rem;
+    bottom: 16.4rem;
+  }
+  .project-wrapper,
+  .project-icon {
+    width: 16rem;
+    height: 16rem;
+  }
+  .portfolio-wrapper {
+    padding: 2rem 2rem 4rem;
+  }
+  .project-wrapper {
+    margin: 1.5rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    /* padding: 0 0.5rem; */
   }
 
-  .overlay-inner {
-    position: relative;
-    top: 35%;
-    justify-content: center;
+}
+/* Laptops */
+@media screen and (min-width: 1025px) {
+  .project-overlay {
+    bottom: 18.4rem;
   }
+  .project-wrapper,
+  .project-icon,
+  .project-overlay {
+    width: 18rem;
+    height: 18rem;
+  }
+  .portfolio-wrapper {
+    padding: 2rem 2rem 55rem;
+  }
+  .project-wrapper {
+    margin: 3rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    /* padding: 0 0.5rem; */
+  }
+  .project-container {
+    padding: 0 5rem;
+  }
+}
 
-  .text-button:hover {
-    color:#eeddff;
-  }
+/* Screens */
+@media screen and (min-width: 1301px) {
 
-  .icon-button:hover {
-    color: #adffad;
+}
+
+/* Lg screens */
+@media screen and (min-width: 1801px) {
+  .project-container {
+    padding: 0 10rem;
   }
+}
+
+/* XL screens */
+@media screen and (min-width: 2400px) {
+  .project-container {
+    padding: 0 35rem;
+  }
+}
+
